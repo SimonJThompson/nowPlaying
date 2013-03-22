@@ -40,16 +40,18 @@
 				
 				$display				= $this->displayFormat;
 
-				$display		= str_replace("[TRACK]",$track_name,$display);
-				$display		= str_replace("[ARTIST]",$track_artist,$display);
+				$display				= str_replace("[TRACK]",$track_name,$display);
+				$display				= str_replace("[ARTIST]",$track_artist,$display);
 				
 				if($track_nowplaying	==	"true")
 				{
+				
 					if($print){
 						echo $display;
 					}else{
 						return $display;
 					}
+					
 				}else{
 					$this->printMessage();
 				}
