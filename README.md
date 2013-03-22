@@ -10,7 +10,7 @@ just use the following line to include the class;
 
     include_once("class.listeningNow.php");
     
-Next, set up the class;
+Next, set up the class and fetch the track.
 
     $np	=	new nowPlaying("lastFMUsername","lastFMAPIKey");  // Create the object and instantiate the class
     $np->nowPlaying();                                      // Fetch and display the currently playing track.
