@@ -1,9 +1,7 @@
 nowPlaying
 ==========
 
-nowPlaying is a PHP class for displaying currently playing tracks.
-
-It currently only supports last.fm, but I hope to expand it and add additional services.
+nowPlaying is a PHP class for displaying currently playing tracks on Last.FM.
 
 Usage
 =======
@@ -16,6 +14,8 @@ Next, set up the class;
 
     $np	=	new nowPlaying("lastFMUsername","lastFMAPIKey");  // Create the object and instantiate the class
     $np->nowPlaying();                                      // Fetch and display the currently playing track.
+    
+You can find your Last.FM API key at http://www.last.fm/api/accounts
     
 Formatting The Response
 =======
