@@ -23,7 +23,9 @@ Formatting The Response
 nowPlaying allows you to format what is displayed about the track, and in the order. To change the formatting in the 
 above example, you could use;
 
+```php
      $np->set_format("[ARTIST] - [TRACK]");
+```     
      
 Which would print something like;
 
