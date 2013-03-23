@@ -8,13 +8,17 @@ Usage
 Using the class is simple. Assuming the class file is in the same directory as the file you are attempting to include it in,
 just use the following line to include the class;
 
+```php
     include_once("class.listeningNow.php");
-    
+```
+
 Next, set up the class and fetch the track.
 
+```php
     $np	=	new nowPlaying("lastFMUsername","lastFMAPIKey");  // Create the object and instantiate the class
     $np->nowPlaying();                                      // Fetch and display the currently playing track.
-    
+```
+
 You can find your Last.FM API key at http://www.last.fm/api/accounts
     
 Formatting The Response
@@ -43,10 +47,14 @@ Setting Alternative Messages
 You can set an alternative message to be displayed when there is no response or nothing being listened to. You can do this
 as follows.
 
+```php
     $np->set_message("I'm not listening at the moment...");
-      
+```
+
 Return, not display
 =======
 You can set a variable with the response of nowPlaying() by passing a "false" parameter to it. For instance;
 
-    $foo  = $np->nowPlaying(false);  
+```php
+    $foo  = $np->nowPlaying(false); 
+```
