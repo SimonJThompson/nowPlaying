@@ -3,7 +3,7 @@
 	/**
 	* A class to return and display currently playing tracks. 
 	*
-	* @author       Simon Thompson <me@wordofsi.com>
+	* @author       Simon Thompson <contact@simon-thompson.me>
 	*
 	*/
 	
